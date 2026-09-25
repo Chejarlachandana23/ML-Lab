@@ -1,0 +1,11 @@
+import pandas as pd
+data=pd.read_csv("sample_data.csv")
+print("data imported from csv")
+print(data.head())
+excel_data=pd.read_excel("sample_data.xlsx")
+print("\n data imported from excel")
+print(excel_data.head())
+data.to_csv("exported_data.csv",index=False)
+print("\n data exported_data'exported_data.csv'successfully")
+data.to_csv("exported_data.xlsx",index=False)
+print("\n data exported to'exported_data_xlsx!successfully")
